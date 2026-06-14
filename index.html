@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najlepsi Piłkarze Świata</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: #1565c0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .players {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #1565c0;
+        }
+
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> Najlepsi Piłkarze Świata</h1>
+    <p>Legendy futbolu i największe gwiazdy piłki nożnej</p>
+</header>
+
+<nav>
+    <a href="#pilkarze">Piłkarze</a>
+    <a href="#o-stronie">O stronie</a>
+</nav>
+
+<div class="container">
+
+    <section id="pilkarze">
+        <h2 style="margin-bottom:20px;">Największe Gwiazdy Futbolu</h2>
+
+        <div class="players">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80" alt="Lionel Messi">
+                <div class="card-content">
+                    <h3>Lionel Messi</h3>
+                    <p>Argentyński geniusz futbolu, wielokrotny zdobywca Złotej Piłki i mistrz świata.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Cristiano Ronaldo">
+                <div class="card-content">
+                    <h3>Cristiano Ronaldo</h3>
+                    <p>Jeden z najlepszych strzelców w historii piłki nożnej i legenda Portugalii.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?auto=format&fit=crop&w=800&q=80" alt="Kylian Mbappe">
+                <div class="card-content">
+                    <h3>Kylian Mbappé</h3>
+                    <p>Francuska gwiazda nowego pokolenia, znana z niesamowitej szybkości.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?auto=format&fit=crop&w=800&q=80" alt="Erling Haaland">
+                <div class="card-content">
+                    <h3>Erling Haaland</h3>
+                    <p>Norweski napastnik słynący z wyjątkowej skuteczności pod bramką.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="o-stronie" style="margin-top:40px;">
+        <h2>O stronie</h2>
+        <p style="margin-top:10px;">
+            Ta strona została stworzona dla fanów piłki nożnej. Znajdziesz tutaj informacje
+            o najlepszych piłkarzach świata oraz ciekawostki związane z futbolem.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Najlepsi Piłkarze Świata</p>
+</footer>
+
+</body>
+</html>
